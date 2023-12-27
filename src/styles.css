@@ -1,0 +1,119 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding: 1rem;
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__link {
+    color: #ffffff8a;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.navbar__link:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.logoNombre {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Main */
+.contenedorInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-top: 12.8rem;
+    width: min(120rem, 100%);
+    /* background-color: aqua; */
+}
+
+.contenedorInfo__imagen {
+    text-align: center;
+}
+
+.contenedorInfo__texto {
+    
+    .titulo {
+        font-size: 1.6rem;
+        color: #ffffff8a;
+        /* font-weight: bold; */
+        margin: 0.4rem;
+    }
+
+    .nombre {
+        font-size: 4rem;
+        color: #ffffff;
+        font-weight: bold;
+        margin: 0.4rem 0rem 2rem 0rem;
+
+    }
+
+    .descripcion {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: justify;
+        margin: 0.4rem 1.6rem 0.4rem 0rem;
+        line-height: 2.4rem;
+    }
+
+}
+
+.contenedorInfo__botones {
+    margin: 1.6rem 0;
+    display: flex;
+    gap: 1rem;
+    /* background-color: aqua; */
+
+}
+
+.botones_contacto {
+    padding: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    /* font-weight: bold; */
+    border: none;
+    cursor: pointer;
+    border-radius: 69px 25px 69px 25px;
+    -webkit-border-radius: 69px 25px 69px 25px;
+    -moz-border-radius: 69px 25px 69px 25px;
+    border-color: #007CED;
+    border-style: inset;
+    background-color: #222222;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        /* color: white; */
+        background-color: #3b3b3b;
+    }
+}
