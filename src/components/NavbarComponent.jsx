@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { Navbar } from "keep-react";
-import { useNavbarLinks } from '../hooks/useNavbarLinks';
+import { useNavbarLinks } from '../hooks';
 
 export const NavbarComponent = () => {
 
-    const { isLinkClicked, scrollToSection } = useNavbarLinks()
+    const { isLinkClicked, scrollToSection } = useNavbarLinks();
 
     return (
         <Navbar fluid={true}>
@@ -66,7 +66,7 @@ export const NavbarComponent = () => {
                     >
                         {/* Utiliza el componente NavLink de React Router */}
                         <NavLink
-                            className={`navbar__link ${isLinkClicked.home ? 'activo' : 'navbar__link'}`}
+                            className={`navbar__link ${isLinkClicked.home ? 'activo' : ''}`}
                             to="#"
                             onClick={() => scrollToSection('home')}
                         >

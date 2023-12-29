@@ -18,12 +18,12 @@ export const useNavbarLinks = () => {
                 top: 0,
                 behavior: 'smooth',
             });
-            return;
+        } else {
+            window.scrollTo({
+                top: targetSection.offsetTop - 100,
+                behavior: 'smooth',
+            });
         }
-        window.scrollTo({
-            top: targetSection.offsetTop - 100,
-            behavior: 'smooth',
-        });
         
 
         // Actualiza el estado para indicar que se ha pulsado el enlace específico

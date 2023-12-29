@@ -3,6 +3,6 @@ export * from './LogoNombre';
 export * from './InformacionPersonal';
 export * from './TecnologiasCard';
 export * from './Carrusel';
-export * from './SoftSkills';
+export * from './TechnicalSkills';
 export * from './Contacto';
 export * from './Footer';

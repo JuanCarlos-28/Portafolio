@@ -1,12 +1,12 @@
 import { tecnologias } from "../data"
 import { TecnologiasCard } from "./TecnologiasCard"
 
-export const SoftSkills = () => {
+export const TechnicalSkills = () => {
     return (
         <>
-            <div id="softSkills">
-                <h2>Soft Skills</h2>
-                    <div className="contenedorSoftSkills">
+            <div id="technicalSkills">
+                <h2>Technical Skills</h2>
+                    <div className="contenedorTechnicalSkills">
                         {
                             tecnologias.map(tecnologia => (
                                 <TecnologiasCard key={tecnologia.name} tecnologia={tecnologia}/>

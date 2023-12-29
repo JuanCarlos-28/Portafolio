@@ -171,7 +171,7 @@ h2 {
     margin-left: 3.2rem;
 }
 
-.contenedorSoftSkills {
+.contenedorTechnicalSkills {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2.4rem;
@@ -512,7 +512,7 @@ h2 {
         margin-left: 0;
     }
 
-    .contenedorSoftSkills {
+    .contenedorTechnicalSkills {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -641,7 +641,7 @@ h2 {
     .carrusel {
         height: 65rem;
     }
-    .contenedorSoftSkills {
+    .contenedorTechnicalSkills {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -694,7 +694,7 @@ h2 {
     .carrusel {
         height: 70rem;
     }
-    .contenedorSoftSkills {
+    .contenedorTechnicalSkills {
         grid-template-columns: repeat(4, 1fr);
     }
 }

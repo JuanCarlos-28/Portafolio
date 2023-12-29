@@ -1,4 +1,4 @@
-import { useNavbarLinks } from "../hooks/useNavbarLinks"
+import { useNavbarLinks } from "../hooks"
 
 export const LogoNombre = () => {
 
