@@ -1,5 +1,4 @@
-import { InformacionPersonal, LogoNombre, Navbar, TecnologiasCard } from "../components"
-import { tecnologias } from "../data"
+import { Carrusel, InformacionPersonal, LogoNombre, Navbar, SoftSkills } from "../components"
 
 export const HomePage = () => {
 
@@ -11,17 +10,17 @@ export const HomePage = () => {
             </header>
 
             <main>
-                <InformacionPersonal />
-                <hr />
-                <h2>Soft Skills</h2>
-                <div className="contenedorSoftSkills">
-                    {
-                        tecnologias.map(tecnologia => (
-                            <TecnologiasCard key={tecnologia.name} tecnologia={tecnologia}/>
-                        ))
-                    }
+                <div className="centrarContenedores">
+                    <InformacionPersonal />
+                    <hr />
+                    <SoftSkills />
+                    <hr />
+                    <Carrusel />
                 </div>
+
+
             </main>
+            
 
         </>
     )
