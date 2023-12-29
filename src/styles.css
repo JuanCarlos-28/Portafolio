@@ -259,9 +259,124 @@ h2 {
     font-weight: bold;
 }
 
+/* Contacto */
+.contacto {
+    margin: 3.2rem auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 95%;
+}
+.contacto iframe{
+    width: 100%;
+    height: 30rem;
+    border-radius: 2rem;
+    grid-column: 1/2;
+}
+
+.contacto_info {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.contacto_info_1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    margin: 3.2rem 0;
+}
+
+.contacto_info_1 img {
+    width: 64px;
+    /* background-color: white; */
+}
+
+.contacto_info_11 {
+    font-size: 1.2rem;
+    color: white;
+    /* text-align: justify; */
+}
+
+.contacto_info_11 span {
+    display: block;
+    text-align: center;
+}
+
+.contacto_info_11 p:last-child {
+    display: none;
+}
+
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-column: 2/4; */
+    gap: 1.6rem;
+
+    input, textarea {
+        background-color: transparent;
+        border: none;
+        border: 2px solid gray;
+        border-radius: 2rem;
+        /* border-bottom: 1px solid white; */
+        padding: 1rem;
+        font-size: 2rem;
+        color: white;
+
+        &::placeholder {
+            color: gray;
+        }
+
+    }
+
+    input {
+        grid-column: 1/3;
+    }
+
+    textarea {
+        grid-row: 1/4;
+        grid-column: 1/3;
+    }
+
+}
+
+.unbordered {
+    border-radius: 1rem;
+}
+
 @media (min-width: 468px) {
     .carrusel {
         height: 39rem;
+    }
+
+    .formulario-contacto {
+
+        input:nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        input:nth-child(2) {
+            grid-column: 2/3;
+        }
+
+        input:nth-child(3) {
+            grid-column: 1/3;
+        }
+
+        input:nth-child(1) {
+            grid-column: 1/2;
+        }
+    
+        textarea {
+            grid-row: 3/4;
+            grid-column: 1/3;
+        }
+    
     }
 }
 
@@ -398,6 +513,87 @@ h2 {
         letter-spacing: 0.2rem;
     }
 
+    /* Contacto */
+    .contacto {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 95%;
+    }
+    .contacto iframe{
+        width: 100%;
+        height: 30rem;
+        border-radius: 2rem;
+        grid-column: 1/4;
+    }
+
+    .contacto_info {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+
+    .contacto_info_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.6rem 0;
+        flex-direction: row;
+    }
+
+    .contacto_info_1 img {
+        width: 64px;
+        /* background-color: white; */
+    }
+
+    .contacto_info_11 {
+        font-size: 1.3rem;
+        color: white;
+        /* text-align: justify; */
+    }
+
+    .contacto_info_11 span {
+        display: inline-block;
+    }
+
+    .formulario-contacto {
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 2/4;
+        gap: 1.6rem;
+
+        input, textarea {
+            background-color: transparent;
+            border: none;
+            border: 2px solid gray;
+            border-radius: 2rem;
+            /* border-bottom: 1px solid white; */
+            padding: 1rem;
+            font-size: 2rem;
+            color: white;
+            width: 100%;
+
+            &::placeholder {
+                color: gray;
+            }
+
+        }
+
+    }
+
+    .unbordered {
+        border-radius: 1rem;
+    }
+
+    .contacto_info_11 p:last-child {
+        display: block;
+    }
+
 }
 
 @media (min-width: 968px) {
@@ -406,6 +602,33 @@ h2 {
     }
     .contenedorSoftSkills {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .formulario-contacto {
+        input:nth-child(1) {
+            grid-column: 1/2;
+        }
+
+        input:nth-child(2) {
+            grid-column: 1/2;
+        }
+
+        input:nth-child(3) {
+            grid-column: 1/2;
+        }
+
+        input:nth-child(1) {
+            grid-column: 1/2;
+        }
+    
+        textarea {
+            grid-row: 1/4;
+            grid-column: 2/3;
+        }
+
+        button {
+            grid-column: 1/3;
+        }
     }
 }
 

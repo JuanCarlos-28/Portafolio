@@ -6,7 +6,7 @@ export const Carrusel = () => {
     return (
         <>
             <h2>Projects</h2>
-            <Carousel  autoplaySpeed={3000}>
+            <Carousel autoplay autoplaySpeed={3000}>
 
                 {
                     proyectos.map(proyecto => (

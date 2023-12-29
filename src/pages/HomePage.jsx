@@ -1,4 +1,4 @@
-import { Carrusel, InformacionPersonal, LogoNombre, Navbar, SoftSkills } from "../components"
+import { Carrusel, Contacto, InformacionPersonal, LogoNombre, Navbar, SoftSkills } from "../components"
 
 export const HomePage = () => {
 
@@ -16,6 +16,9 @@ export const HomePage = () => {
                     <SoftSkills />
                     <hr />
                     <Carrusel />
+                    <hr />
+                    <Contacto />
+                    <hr />
                 </div>
 
 
