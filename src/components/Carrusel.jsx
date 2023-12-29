@@ -5,22 +5,24 @@ export const Carrusel = () => {
 
     return (
         <>
-            <h2>Projects</h2>
-            <Carousel autoplay autoplaySpeed={3000}>
+            <div id="projects">
+                <h2>Projects</h2>
+                <Carousel autoplay autoplaySpeed={3000}>
 
-                {
-                    proyectos.map(proyecto => (
-                        <div key={ proyecto.name } className='carrusel'>
-                            <a href={ proyecto.url } target="_blank" rel="noopener noreferrer"> 
-                                <img src={ proyecto.urlImage } alt={ proyecto.name } /> 
-                            </a>
-                            <p className='text-bold'>{ proyecto.name }</p>
-                            <span>{ proyecto.description }</span>
-                        </div>
-                    ))
-                }
-                
-            </Carousel>
+                    {
+                        proyectos.map(proyecto => (
+                            <div key={ proyecto.name } className='carrusel'>
+                                <a href={ proyecto.url } target="_blank" rel="noopener noreferrer"> 
+                                    <img src={ proyecto.urlImage } alt={ proyecto.name } /> 
+                                </a>
+                                <p className='text-bold'>{ proyecto.name }</p>
+                                <span>{ proyecto.description }</span>
+                            </div>
+                        ))
+                    }
+                    
+                </Carousel>
+            </div>
         </>
     )
 };

@@ -1,4 +1,4 @@
-import { Carrusel, Contacto, InformacionPersonal, LogoNombre, Navbar, SoftSkills } from "../components"
+import { Carrusel, Contacto, Footer, InformacionPersonal, LogoNombre, NavbarComponent, SoftSkills } from "../components"
 
 export const HomePage = () => {
 
@@ -6,8 +6,11 @@ export const HomePage = () => {
         <>
             <header className="header animate__animated animate__fadeIn">
                 <LogoNombre />
-                <Navbar />
+                <NavbarComponent />
             </header>
+
+            {/* <NavbarComponent /> */}
+
 
             <main>
                 <div className="centrarContenedores">
@@ -18,12 +21,10 @@ export const HomePage = () => {
                     <Carrusel />
                     <hr />
                     <Contacto />
-                    <hr />
                 </div>
-
-
             </main>
-            
+
+            <Footer />
 
         </>
     )

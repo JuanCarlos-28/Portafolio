@@ -1,6 +1,10 @@
+import { useNavbarLinks } from "../hooks/useNavbarLinks"
+
 export const InformacionPersonal = () => {
+
+    const { scrollToSection } = useNavbarLinks();
     return (
-        <div className="contenedorInfo">
+        <div className="contenedorInfo" id="home">
 
             <div className="contenedorInfo__imagen animate__animated animate__slideInLeft">
                 <img src="/img/desarrollo-movil.png" alt="" />
@@ -14,7 +18,7 @@ export const InformacionPersonal = () => {
                 </p>
                 <div className="contenedorInfo__botones">
                     <a href="/files/Juan_Carlos_Rivas_CV_Español.pdf" download="CV_Juan Rivas_Español" className="botones_contacto">CV</a>
-                    <a className="botones_contacto">Contact</a>
+                    <a className="botones_contacto" onClick={ () => scrollToSection("contact") }>Contact</a>
                 </div>
             </div>
 

@@ -1,3 +1,5 @@
+@import "keep-react/css";
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -11,23 +13,23 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    padding: 0.6rem;
+    text-decoration: none;
+    color: white;
+}
+
 /* Header */
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
+    background-color: #333333;
+    align-items: center;
+    z-index: 100;
     /* width: 300px; */
 }
-
-.navbar {
-    /* padding: 1rem; */
-    /* display: flex; */
-    /* gap: 1.6rem; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    display: none;
-    /* text-align: center; */
-}
-
 .navbar__link {
     color: #ffffff8a;
     text-decoration: none;
@@ -37,17 +39,6 @@ html {
 .navbar__link:hover {
     color: white;
     cursor: pointer;
-}
-
-.hamburguer {
-    margin: 2rem;
-    color: white;
-    font-size: 3.2rem;
-    cursor: pointer;
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .logoNombre {
@@ -60,11 +51,28 @@ html {
     color: white;
     font-size: 2.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .logoNombre p {
     display: none;
 }
+
+.bg-white {
+    background-color: #333333;
+}
+
+
+line {
+    stroke: white;
+}
+
+/* styles.css */
+.activo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 
 /* Main */
 .centrarContenedores {
@@ -74,7 +82,7 @@ html {
 
 .contenedorInfo {
     display: grid;
-    
+    place-items: center;
     grid-template-columns: 1fr;
     text-align: center;
     gap: 1rem;
@@ -341,6 +349,7 @@ h2 {
     textarea {
         grid-row: 1/4;
         grid-column: 1/3;
+        resize: none;
     }
 
 }
@@ -349,9 +358,40 @@ h2 {
     border-radius: 1rem;
 }
 
+.footer {
+    margin-top: 3.2rem;
+    padding: 3rem;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.redesSociales a{
+    font-size: 1.6rem;
+}
+
+.derechosReservados {
+    font-size: 1.6rem;
+}
+
 @media (min-width: 468px) {
     .carrusel {
         height: 39rem;
+    }
+
+    .logoNombre {
+        /* padding: 1rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoNombre p {
+        display: block;
     }
 
     .formulario-contacto {
@@ -394,17 +434,6 @@ h2 {
 
     .hamburguer {
         display: none;
-    }
-
-    .logoNombre {
-        /* padding: 1rem; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logoNombre p {
-        display: block;
     }
 
     .contenedorInfo {
@@ -594,6 +623,18 @@ h2 {
         display: block;
     }
 
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .redesSociales a{
+        font-size: 1.4rem;
+    }
+    
+    .derechosReservados {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media (min-width: 968px) {
@@ -629,6 +670,23 @@ h2 {
         button {
             grid-column: 1/3;
         }
+    }
+
+    .footer:first-child {
+        place-items: start;
+    }
+
+    .redesSociales {
+        text-align: start;
+    }
+    
+    .redesSociales a{
+        font-size: 2rem;
+    }
+    
+    .derechosReservados {
+        font-size: 2rem;
+        text-align: end;
     }
 }
 
