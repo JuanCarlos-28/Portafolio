@@ -10,16 +10,16 @@ export const useCustomForm = () => {
         notificacion.textContent = mensaje;
 
         if (tipo === 'success') {
-        notificacion.classList.add('alert', 'success');
+            notificacion.classList.add('alert', 'success');
         } else {
-        notificacion.classList.add('alert', 'error');
+            notificacion.classList.add('alert', 'error');
         }
 
         formulario.appendChild(notificacion);
 
         // Elimina la notificación después de 3 segundos
         setTimeout(() => {
-        notificacion.remove();
+            notificacion.remove();
         }, 3000);
     };
 
