@@ -1,6 +1,11 @@
+import { useScrollAnimation } from "../hooks";
+
 export const InformacionContacto = () => {
+
+    const sectionRef = useScrollAnimation(0.05, 'animate__slideInLeft');
+
     return (
-        <div className="contacto_info">
+        <div ref={sectionRef} className="contacto_info">
             <div className="contacto_info_1">
                 <img src="/img/celular_azul.png" alt="Celular" />
                 <div className="contacto_info_11">

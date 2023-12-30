@@ -1,11 +1,14 @@
 import { Carousel } from 'antd';
 import { proyectos } from '../data';
+import { useScrollAnimation } from '../hooks';
 
 export const Carrusel = () => {
 
+    const sectionRef = useScrollAnimation(0.05, 'animate__slideInUp');
+
     return (
         <>
-            <div id="projects">
+            <div id="projects" ref={sectionRef}>
                 <h2>Projects</h2>
                 <Carousel autoplay autoplaySpeed={3000}>
 

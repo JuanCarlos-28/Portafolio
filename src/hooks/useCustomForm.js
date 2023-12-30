@@ -43,18 +43,18 @@ export const useCustomForm = () => {
         const message = document.querySelector('#message').value.trim();
 
         if (asunto === '' || email === '' || rol === '' || message === '') {
-        mostrarAlerta('All fields must be filled', 'error');
-        return;
+            mostrarAlerta('All fields must be filled', 'error');
+            return;
         }
 
         if (!validarEmail(email)) {
-        mostrarAlerta('Invalid email', 'error');
-        return;
+            mostrarAlerta('Invalid email', 'error');
+            return;
         }
 
         if (state.errors) {
-        mostrarAlerta('Oops, a problem occurred with the server', 'error');
-        return;
+            mostrarAlerta('Oops, a problem occurred with the server', 'error');
+            return;
         }
 
         mostrarAlerta('Thank you for sending a message, I will contact you shortly!', 'success');

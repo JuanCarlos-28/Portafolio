@@ -1,12 +1,13 @@
-import { useCustomForm } from "../hooks";
+import { useCustomForm, useScrollAnimation } from "../hooks";
 
 export const Formulario = () => {
 
     const { state, onEnviar, handleSubmit } = useCustomForm();
+    const sectionRef = useScrollAnimation(0.05, 'animate__slideInRight');
 
     return (
         
-        <form className="formulario-contacto" onClick={onEnviar} onSubmit={handleSubmit}>
+        <form ref={sectionRef} className="formulario-contacto" onClick={onEnviar} onSubmit={handleSubmit}>
             <input 
                 type="text"
                 placeholder="Asunto"

@@ -3,6 +3,7 @@ import { Formulario, InformacionContacto, Mapa } from '../components';
 
 export const Contacto = () => {
 
+
     return (
         <>
             <div id="contact">

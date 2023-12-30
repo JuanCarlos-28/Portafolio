@@ -1,9 +1,14 @@
+import { useScrollAnimation } from "../hooks";
+
 export const SoftSkills = () => {
+
+    const sectionRef = useScrollAnimation(0.05, 'animate__bounce');
+
     return (
         <>
             <div id="softSkills">
                 <h2>Soft Skills</h2>
-                <div className="contenedorSoftSkills">
+                <div ref={sectionRef} className="contenedorSoftSkills">
 
                     <div className="softSkillCard">
                         <img src="/img/competencia (2).png" alt="" />

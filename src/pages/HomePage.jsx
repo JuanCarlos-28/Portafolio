@@ -2,8 +2,6 @@ import { Carrusel, Contacto, Footer, InformacionPersonal, LogoNombre, NavbarComp
 
 export const HomePage = () => {
 
-    
-
     return (
         <>
             <header className="header animate__animated animate__fadeIn">
