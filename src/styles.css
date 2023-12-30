@@ -168,7 +168,45 @@ h2 {
     margin-top: 3.6rem;
     font-size: 4.8rem;
     text-align: center;
-    margin-left: 3.2rem;
+    font-weight: bold;
+    /* margin-left: 3.2rem; */
+}
+
+.contenedorSoftSkills {
+    margin: 3.2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+}
+
+.softSkillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+    /* box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.1); */
+    /* border: 5px solid rgba(255, 255, 255, 0.959); */
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.softSkillCard img{
+    width: 12.8rem;
+}
+
+.softSkillCard p{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.softSkillCard p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.softSkillCard:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 5px 15px rgb(255, 255, 255); */
 }
 
 .contenedorTechnicalSkills {
@@ -378,6 +416,27 @@ h2 {
     font-size: 1.6rem;
 }
 
+.alert {
+    padding: 1.6rem;
+    font-size: 2.4rem;
+    border: none;
+    border: 1px solid black;
+    border-radius: 2rem;
+    grid-column: 1/3;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #157347;
+}
+
+.error {
+    background-color: #bb2d3b;
+}
+
+
 @media (min-width: 468px) {
     .carrusel {
         height: 39rem;
@@ -507,9 +566,8 @@ h2 {
         }
     }
 
-    h2 {
-        text-align: start;
-        margin-left: 0;
+    .contenedorSoftSkills {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contenedorTechnicalSkills {
@@ -691,8 +749,15 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+    h2 {
+        text-align: start;
+        margin-left: 1rem;
+    }
     .carrusel {
         height: 70rem;
+    }
+    .contenedorSoftSkills {
+        grid-template-columns: repeat(3, 1fr);
     }
     .contenedorTechnicalSkills {
         grid-template-columns: repeat(4, 1fr);

@@ -1,6 +1,8 @@
-import { Carrusel, Contacto, Footer, InformacionPersonal, LogoNombre, NavbarComponent, TechnicalSkills } from "../components"
+import { Carrusel, Contacto, Footer, InformacionPersonal, LogoNombre, NavbarComponent, SoftSkills, TechnicalSkills } from "../components"
 
 export const HomePage = () => {
+
+    
 
     return (
         <>
@@ -15,6 +17,8 @@ export const HomePage = () => {
             <main>
                 <div className="centrarContenedores">
                     <InformacionPersonal />
+                    <hr />
+                    <SoftSkills />
                     <hr />
                     <TechnicalSkills />
                     <hr />

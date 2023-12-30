@@ -20,6 +20,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.home ? 'activo' : ''}`}
                             to="#"
+                            name="link-home"
                             onClick={() => scrollToSection('home')}
                         >
                             Home
@@ -28,6 +29,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.softSkills ? 'activo' : ''}`}
                             to="#"
+                            name="link-softSkills"
                             onClick={() => scrollToSection('softSkills')}
                         >
                             Soft Skills
@@ -36,6 +38,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.technicalSkills ? 'activo' : ''}`}
                             to="#"
+                            name="link-technicalSkills"
                             onClick={() => scrollToSection('technicalSkills')}
                         >
                             Technical Skills
@@ -44,6 +47,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.projects ? 'activo' : ''}`}
                             to="#"
+                            name="link-projects"
                             onClick={() => scrollToSection('projects')}
                         >
                             Projects
@@ -52,6 +56,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.contact ? 'activo' : ''}`}
                             to="#"
+                            name="link-contact"
                             onClick={() => scrollToSection('contact')}
                         >
                             Contact
@@ -68,6 +73,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.home ? 'activo' : ''}`}
                             to="#"
+                            name="link-home"
                             onClick={() => scrollToSection('home')}
                         >
                             Home
@@ -76,6 +82,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.softSkills ? 'activo' : ''}`}
                             to="#"
+                            name="link-softSkills"
                             onClick={() => scrollToSection('softSkills')}
                         >
                             Soft Skills
@@ -84,6 +91,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.technicalSkills ? 'activo' : ''}`}
                             to="#"
+                            name="link-technicalSkills"
                             onClick={() => scrollToSection('technicalSkills')}
                         >
                             Technical Skills
@@ -92,6 +100,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.projects ? 'activo' : ''}`}
                             to="#"
+                            name="link-projects"
                             onClick={() => scrollToSection('projects')}
                         >
                             Projects
@@ -100,6 +109,7 @@ export const NavbarComponent = () => {
                         <NavLink
                             className={`navbar__link ${isLinkClicked.contact ? 'activo' : ''}`}
                             to="#"
+                            name="link-contact"
                             onClick={() => scrollToSection('contact')}
                         >
                             Contact
