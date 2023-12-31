@@ -23,7 +23,7 @@ export const InformacionContacto = () => {
             <div className="contacto_info_1">
                 <img src="/img/correo_azul.png" alt="Correo" />
                 <div className="contacto_info_11">
-                    <p className="text-bold">carlos223651555<span>@gmail.com</span></p>
+                    <p className="text-bold">juanrivasdev<span>@gmail.com</span></p>
                     <p>Lorem ipsum dolor sit amet lorem xddd adipisicing elit lorem ipsum lorem xdd.</p>
                 </div>
             </div>
