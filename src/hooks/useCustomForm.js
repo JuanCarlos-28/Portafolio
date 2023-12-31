@@ -4,11 +4,11 @@ import { useState } from "react";
 export const useCustomForm = () => {
     const [state, handleSubmit] = useForm("xayzzgkq");
     const [mostrarSpinner, setMostrarSpinner] = useState(false);
-    const formulario = document.querySelector('.formulario-contacto');
-
-
+    
+    
     const mostrarAlerta = (mensaje, tipo, e) => {
         const notificacion = document.createElement('p');
+        const formulario = document.querySelector('.formulario-contacto');
 
         notificacion.textContent = mensaje;
 
@@ -53,7 +53,7 @@ export const useCustomForm = () => {
             const rol = document.querySelector('#rol').value.trim();
             const message = document.querySelector('#message').value.trim();
 
-            
+            console.log('Hola');
 
             if (asunto === '' || email === '' || rol === '' || message === '') {
                 mostrarAlerta('All fields must be filled', 'error', e);
@@ -80,6 +80,7 @@ export const useCustomForm = () => {
     };
 
     const limpiarFormulario = () => {
+        const formulario = document.querySelector('.formulario-contacto');
         formulario.reset();
     }
 
