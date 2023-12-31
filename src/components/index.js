@@ -9,4 +9,5 @@ export * from './Contacto';
 export * from './Mapa';
 export * from './InformacionContacto';
 export * from './Formulario';
+export * from './Spinner';
 export * from './Footer';

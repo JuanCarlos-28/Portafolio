@@ -16,7 +16,7 @@ export const InformacionContacto = () => {
             <div className="contacto_info_1">
                 <img src="/img/ubicacion_azul.png" alt="Ubicación" />
                 <div className="contacto_info_11">
-                    <p className="text-bold">José María pino suarez</p>
+                    <p className="text-bold">Mazatlán, Sinaloa</p>
                     <p>Lorem ipsum dolor sit amet lorem xddd adipisicing elit lorem ipsum lorem xdd.</p>
                 </div>
             </div>

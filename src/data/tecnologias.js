@@ -11,14 +11,14 @@ export const tecnologias = [
         urlImage: '/img/css-3.png',
         url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
         description: 'CSS (Cascading Style Sheets) es un lenguaje de diseño que se utiliza para controlar la presentación y el diseño de documentos HTML.',
-        rate: 5,
+        rate: 4,
     },
     {
         name: 'JavaScript',
         urlImage: '/img/javascript.png',
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         description: 'JavaScript es un lenguaje de programación de alto nivel que se utiliza para crear páginas web interactivas y dinámicas. Es un componente fundamental del desarrollo web moderno.',
-        rate: 5,
+        rate: 4,
     },
     {
         name: 'Bootstrap',
@@ -39,20 +39,20 @@ export const tecnologias = [
         urlImage: '/img/base-de-datos.png',
         url: 'https://www.w3schools.com/sql/',
         description: 'SQL (Structured Query Language) es un lenguaje de programación utilizado para gestionar y manipular bases de datos relacionales. Permite realizar consultas, actualizaciones y más.',
-        rate: 4,
+        rate: 3,
     },
     {
         name: 'GitHub',
         urlImage: '/img/github.png',
         url: 'https://github.com/',
         description: 'GitHub es una plataforma de desarrollo colaborativo que utiliza el control de versiones Git. Permite a los desarrolladores trabajar juntos en proyectos, gestionar el código fuente y más.',
-        rate: 3,
+        rate: 4,
     },
     {
         name: 'TypeScript',
         urlImage: '/img/typescript.png',
         url: 'https://www.typescriptlang.org/',
         description: 'TypeScript es un superset de JavaScript que agrega tipos estáticos opcionales al lenguaje. Facilita el desarrollo de aplicaciones escalables y mantenibles.',
-        rate: 2,
+        rate: 3,
     }
 ];

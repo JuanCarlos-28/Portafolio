@@ -12,7 +12,6 @@ export const Contacto = () => {
                     <Mapa />
 
                     <InformacionContacto />
-
                     <Formulario />
 
                 </div>

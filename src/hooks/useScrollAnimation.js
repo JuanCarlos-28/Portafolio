@@ -15,8 +15,6 @@ export const useScrollAnimation = (threshold = 0.05, animacion = 'animate__fadeI
 
 
             if (scrollY > elementTop + elementHeight * threshold - windowHeight) {
-                console.log('Hola');
-                console.log({elementTop, elementHeight, windowHeight, scrollY});
                 element.classList.add('animate__animated', animacion);
             }
         };

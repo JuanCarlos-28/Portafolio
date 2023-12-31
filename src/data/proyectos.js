@@ -14,7 +14,7 @@ export const proyectos = [
     {
         name: 'Generador de Gifs',
         urlImage: '/img/generador-gifs.png',
-        url: 'https://generador-de-gifs.netlify.app/',
+        url: 'https://juancarlos-28.github.io/react-gif-expert/',
         description: 'Aplicación que consulta una api llamada Giphy y muestra 10 resultados | React',
     },
     {
@@ -22,5 +22,23 @@ export const proyectos = [
         urlImage: '/img/festival-de-musica.png',
         url: 'https://festivaldemusicamomolones.netlify.app/',
         description: 'Proyecto realizado para practicar JavaScript & SASS',
+    },
+    {
+        name: 'Administrador de Citas',
+        urlImage: '/img/administrador-de-citas.png',
+        url: 'https://juancarlos-28.github.io/Administrador-de-Citas/',
+        description: 'Proyecto realizado para practicar Clases en JS',
+    },
+    {
+        name: 'Cotización Seguro Autos',
+        urlImage: '/img/cotizacion-seguro-autos.png',
+        url: 'https://juancarlos-28.github.io/Cotizacion-Seguro-de-Autos/',
+        description: 'Proyecto realizado para practicar Prototypes en JS',
+    },
+    {
+        name: 'Gastos Semanales',
+        urlImage: '/img/gastos-semanales.png',
+        url: 'https://juancarlos-28.github.io/Gastos-Semanales/',
+        description: 'Proyecto realizado para practicar Clases en JS',
     },
 ];

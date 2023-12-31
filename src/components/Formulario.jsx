@@ -1,8 +1,9 @@
 import { useCustomForm, useScrollAnimation } from "../hooks";
+import { Spinner } from "./Spinner";
 
 export const Formulario = () => {
 
-    const { state, onEnviar, handleSubmit } = useCustomForm();
+    const { state, onEnviar, handleSubmit, mostrarSpinner } = useCustomForm();
     const sectionRef = useScrollAnimation(0.05, 'animate__slideInRight');
 
     return (
@@ -25,7 +26,7 @@ export const Formulario = () => {
                 name="email"
                 id="email"
                 autoComplete="off"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 // value={ correo }
                 // onChange={ onInputChange }
             />
@@ -54,6 +55,8 @@ export const Formulario = () => {
             <button type="submit" className="botones_contacto unbordered" disabled={state.submitting}>
                 Enviar
             </button>
+
+            {mostrarSpinner ? <Spinner /> : <></>}
         </form>
     )
 }
