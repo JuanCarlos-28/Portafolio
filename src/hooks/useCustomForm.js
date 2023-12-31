@@ -5,7 +5,6 @@ export const useCustomForm = () => {
     const [state, handleSubmit] = useForm("xayzzgkq");
     const [mostrarSpinner, setMostrarSpinner] = useState(false);
     
-    
     const mostrarAlerta = (mensaje, tipo, e) => {
         const notificacion = document.createElement('p');
         const formulario = document.querySelector('.formulario-contacto');
