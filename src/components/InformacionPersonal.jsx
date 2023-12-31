@@ -8,7 +8,7 @@ export const InformacionPersonal = () => {
         <div className="contenedorInfo" id="home">
 
             <div className="contenedorInfo__imagen animate__animated animate__slideInLeft">
-                <img src="/img/desarrollo-movil.png" alt="" />
+                <img src="/.img/desarrollo-movil.png" alt="" />
             </div>
 
             <div className="contenedorInfo__texto animate__animated animate__slideInRight">
