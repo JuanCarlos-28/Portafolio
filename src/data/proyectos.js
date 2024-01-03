@@ -18,6 +18,12 @@ export const proyectos = [
         description: 'Aplicación que consulta una api llamada Giphy y muestra 10 resultados | React',
     },
     {
+        name: 'Pokedex',
+        urlImage: 'img/pokedex.png',
+        url: 'https://po-ked-ex.netlify.app/',
+        description: 'Proyecto realizado para practicar React con TypeScript',
+    },
+    {
         name: 'Festival de música',
         urlImage: 'img/festival-de-musica.png',
         url: 'https://festivaldemusicamomolones.netlify.app/',
