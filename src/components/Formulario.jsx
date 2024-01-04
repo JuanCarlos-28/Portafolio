@@ -33,7 +33,7 @@ export const Formulario = () => {
                 // onChange={ onInputChange }
             />
             <input 
-                type="telephone"
+                type="tel"
                 placeholder="Telefono"
                 className="form-control"
                 name="telefono"
