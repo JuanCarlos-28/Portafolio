@@ -29,8 +29,17 @@ export const useCustomForm = () => {
     const validarEmail = (email) => {
         const regex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const resultado = regex.test(email);
+        console.log(resultado);
         return resultado;
     };
+
+    const validarTelefono = (telefono) => {
+        const regex = /^(?:\+\d{1,3}\s?)?\d{6,14}$/;
+        const resultado = regex.test(telefono);
+        console.log(resultado);
+        return resultado;
+    };
+    
 
     const onEnviar = (e) => {
         // e.preventDefault();
@@ -41,40 +50,37 @@ export const useCustomForm = () => {
 
         e.target.style.display = 'none';
 
+        // Validaciones
+        const asunto = document.querySelector('#asunto').value.trim();
+        const email = document.querySelector('#email').value.trim();
+        const telefono = document.querySelector('#telefono').value.trim();
+        const message = document.querySelector('#message').value.trim();
+
+        if (asunto === '' || email === '' || telefono === '' || message === '') {
+            mostrarAlerta('All fields must be filled', 'error', e);
+            return;
+        }
+
+        if (!validarEmail(email)) {
+            mostrarAlerta('Invalid email', 'error', e);
+            return;
+        }
+
+        if (!validarTelefono(telefono)) {
+            mostrarAlerta('Invalid phone', 'error', e);
+            return;
+        }
+        
         setMostrarSpinner(true);
 
         setTimeout(() => {
 
             setMostrarSpinner(false);
-            // Validaciones
-            const asunto = document.querySelector('#asunto').value.trim();
-            const email = document.querySelector('#email').value.trim();
-            const rol = document.querySelector('#rol').value.trim();
-            const message = document.querySelector('#message').value.trim();
-
-            console.log('Hola');
-
-            if (asunto === '' || email === '' || rol === '' || message === '') {
-                mostrarAlerta('All fields must be filled', 'error', e);
-                return;
-            }
-
-            if (!validarEmail(email)) {
-                mostrarAlerta('Invalid email', 'error', e);
-                return;
-            }
-
-            if (state.errors) {
-                mostrarAlerta('Oops, a problem occurred with the server', 'error', e);
-                return;
-            }
 
             limpiarFormulario();
             mostrarAlerta('Thank you for sending a message, I will contact you shortly!', 'success', e);
 
         }, 3000);
-
-        
 
     };
 

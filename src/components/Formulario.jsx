@@ -16,6 +16,7 @@ export const Formulario = () => {
                 name="asunto"
                 id="asunto"
                 autoComplete="off"
+                required
                 // value={ asunto }
                 // onChange={ onInputChange }
             />
@@ -26,17 +27,19 @@ export const Formulario = () => {
                 name="email"
                 id="email"
                 autoComplete="off"
+                required
                 // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 // value={ correo }
                 // onChange={ onInputChange }
             />
             <input 
-                type="text"
-                placeholder="Rol"
+                type="tel"
+                placeholder="Telefono"
                 className="form-control"
-                name="rol"
-                id="rol"
+                name="telefono"
+                id="telefono"
                 autoComplete="off"
+                required
                 // value={ rol }
                 // onChange={ onInputChange }
             />
@@ -46,6 +49,7 @@ export const Formulario = () => {
                 name="message"
                 id="message"
                 autoComplete="off"
+                required
                 // value={ mensaje }
                 // onChange={ onInputChange }
                 cols="40"
