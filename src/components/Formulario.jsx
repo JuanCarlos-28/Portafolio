@@ -3,7 +3,7 @@ import { Spinner } from "./Spinner";
 
 export const Formulario = () => {
 
-    const { state, onEnviar, handleSubmit, mostrarSpinner } = useCustomForm();
+    const { state, onEnviar, handleSubmit, mostrarSpinner, soloNumeros } = useCustomForm();
     const sectionRef = useScrollAnimation(0.05, 'animate__slideInRight');
 
     return (
@@ -33,11 +33,12 @@ export const Formulario = () => {
                 // onChange={ onInputChange }
             />
             <input 
-                type="tel"
+                type="telephone"
                 placeholder="Telefono"
                 className="form-control"
                 name="telefono"
                 id="telefono"
+                onKeyDown={ soloNumeros }
                 autoComplete="off"
                 required
                 // value={ rol }

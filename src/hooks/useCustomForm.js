@@ -29,17 +29,25 @@ export const useCustomForm = () => {
     const validarEmail = (email) => {
         const regex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const resultado = regex.test(email);
-        console.log(resultado);
         return resultado;
     };
 
     const validarTelefono = (telefono) => {
         const regex = /^(?:\+\d{1,3}\s?)?\d{6,14}$/;
         const resultado = regex.test(telefono);
-        console.log(resultado);
         return resultado;
     };
     
+    const soloNumeros = (event) => {
+        const key = event.key;
+        const isShiftPressed = event.shiftKey;
+
+        // Permite Numeros, las flechas y la combinación "Shift + Inicio" "Shift + Fin"
+        if ( !(isShiftPressed && (key === 'Home' || key === 'End')) && !/[\d+\s]/.test(key) && key !== 'Backspace' && key !== 'Delete' && key !== 'ArrowLeft' && key !== 'ArrowRight' ) {
+            event.preventDefault();
+        }
+        
+    }
 
     const onEnviar = (e) => {
         // e.preventDefault();
@@ -93,6 +101,7 @@ export const useCustomForm = () => {
         state,
         handleSubmit,
         onEnviar,
-        mostrarSpinner
+        mostrarSpinner,
+        soloNumeros,
     };
 };
