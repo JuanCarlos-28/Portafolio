@@ -24,6 +24,12 @@ export const proyectos = [
         description: 'Proyecto realizado para practicar React con TypeScript',
     },
     {
+        name: 'CRM - CLientes',
+        urlImage: 'img/crm-clientes.png',
+        url: 'https://juancarlos-28.github.io/CRM-Clientes/',
+        description: 'Proyecto para administrar clientes | JavaScript & IndexedDB',
+    },
+    {
         name: 'Festival de música',
         urlImage: 'img/festival-de-musica.png',
         url: 'https://festivaldemusicamomolones.netlify.app/',
